@@ -4,7 +4,7 @@
 
 // 1
 
-console.log(hello); // undefined
+console.log(hello);
 var hello = 'world';
 
 // 2
@@ -13,7 +13,7 @@ var needle = 'haystack';
 test();
 function test(){
     var needle = 'magnet';
-    console.log(needle); // magnet
+    console.log(needle);
 }
 
 // 3
@@ -23,7 +23,7 @@ function print(){
     brendan = 'only okay';
     console.log(brendan);
 }
-console.log(brendan); // super cool
+console.log(brendan);
 
 // 4
 
@@ -38,7 +38,7 @@ function eat(){
 
 // 5
 
-console.log(mean)  // undefined
+console.log(mean)
 // mean(); // TypeError: mean is not a function
 console.log(food);
 var mean = function() {
@@ -52,33 +52,33 @@ console.log(food);
 
 // 6
 
-console.log(genre); // undefined
+console.log(genre);
 var genre = "disco";
 rewind();
 function rewind() {
     genre = "rock";
-    console.log(genre); // rock
+    console.log(genre);
     var genre = "r&b";
-    console.log(genre); // r&b
+    console.log(genre);
 }
-console.log(genre); // disco
+console.log(genre);
 
 // 7
 
 dojo = "san jose";
-console.log(dojo); // san jose
+console.log(dojo);
 learn();
 function learn() {
     dojo = "seattle";
-    console.log(dojo); // seattle
+    console.log(dojo);
     var dojo = "burbank";
-    console.log(dojo); // burbank
+    console.log(dojo);
 }
-console.log(dojo); // san jose
+console.log(dojo);
 
 // 8 Bonus ES6: const
 
-console.log(makeDojo("Chicago", 65)); // Object {name: "Chicago", students: 65, hiring: true}
+console.log(makeDojo("Chicago", 65));
 console.log(makeDojo("Berkeley", 0));
 function makeDojo(name, students){
     const dojo = {};
@@ -88,7 +88,7 @@ function makeDojo(name, students){
         dojo.hiring = true;
     }
     else if(dojo.students <= 0){
-        dojo = "closed for now"; // TypeError: Assignment to constant variable.
+        dojo = "closed for now";
     }
     return dojo;
 }
